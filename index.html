@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <header class="secao-topo">
+        <div class="secao-largura-definida">
+            <img src="imagens/local-logo.png" alt="logo" class="img-logo">
+            <p>Agência de Viagens</p>
+        </div>
+    </header>
+    <main>
+        <section class="secao-form">
+            <div class="secao-largura-definida secao-form-largura">
+                <div class="titulo-form">
+                    <img src="imagens/aviao.png" alt="imagem de um avião">
+                    <h1>Selecione um orçamento</h1>
+                </div>
+                <div class="titulo-info-form">
+                    <h2>Informe seus dados</h2>
+                    <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                        
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Nome completo">
+                        
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Email para cadastro">
+                        
+                        <label for="cel">Celular</label>
+                        <input type="tel" name="cel" id="cel" required placeholder="(xx) xxxxx-xxxx">
+
+                        <div class="campo-datas">
+                            <div class="campo-form">
+                                <label for="ida">Data da ida</label>
+                                <input type="date" name="ida" id="ida" required>
+                            </div>
+
+                            <div class="campo-form">
+                                <label for="volta">Data da volta</label>
+                                <input type="date" name="volta" id="volta" required>
+                            </div>
+                        </div>
+
+                        <div class="campo-listas">
+                            <div class="campo-form">
+                                <label for="origem">Origem</label>
+                                <select name="origem" id="origem" required>
+                                    <option value="">Partindo de</option>
+                                    <option value="bahia">Bahia</option>
+                                    <option value="goias">Goias</option>
+                                    <option value="manaus">Manaus</option>
+                                    <option value="maranhao">Maranhão</option>
+                                    <option value="niteroi">Niteroi</option>
+                                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                                    <option value="sao-paulo">São Paulo</option>
+                                </select>
+                            </div>
+
+                            <div class="campo-form">
+                                <label for="destino">Destino</label>
+                                <select name="destino" id="destino" required>
+                                    <option value="">Indo para</option>
+                                    <option value="bahia">Bahia</option>
+                                    <option value="goias">Goias</option>
+                                    <option value="manaus">Manaus</option>
+                                    <option value="maranhao">Maranhão</option>
+                                    <option value="niteroi">Niteroi</option>
+                                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                                    <option value="sao-paulo">São Paulo</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <label for="quarto-cama">Quarto com cama infantil</label>
+                        <div class="radio-cama-infantil">
+                            <div class="campo-radio">
+                                <input type="radio" name="quarto-cama" id="quarto-cama" value="sim">
+                                <label>Sim</label>
+                            </div>
+
+                            <div class="campo-radio">
+                                <input type="radio" name="quarto-cama" id="quarto-cama" value="nao">
+                                <label>Não</label>
+                            </div>
+                        </div>
+
+                        <div class="campo-preferencias-check">
+                            <label for="preferencias">Preferências da hospedagem</label>
+                            <div class="campo-preferencias">
+                                <div class="opcoes-preferencias">
+                                    <input type="checkbox" name="preferencias" id="preferencias" value="piscina">
+                                    <label>Piscina</label>
+                                </div>
+
+                                <div class="opcoes-preferencias">
+                                    <input type="checkbox" name="preferencias" id="preferencias" value="wifi">
+                                    <label>Wi-Fi</label>
+                                </div>
+
+                                <div class="opcoes-preferencias">
+                                    <input type="checkbox" name="preferencias" id="preferencias" value="garagem">
+                                    <label>Garagem</label>
+                                </div>
+
+                                <div class="opcoes-preferencias">
+                                    <input type="checkbox" name="preferencias" id="preferencias" value="suite">
+                                    <label>Suite</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
