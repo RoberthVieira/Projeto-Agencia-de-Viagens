@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <title>Agência de Viagens</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     </header>
     <main>
         <section class="secao-form">
-            <div class="secao-largura-definida secao-form-largura">
+            <div class="secao-largura-definida ">
                 <div class="titulo-form">
                     <img src="imagens/aviao.png" alt="imagem de um avião">
                     <h1>Selecione um orçamento</h1>
@@ -24,30 +25,30 @@
                     <h2>Informe seus dados</h2>
                     <form action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
                         
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" required placeholder="Nome completo">
+                        <label for="nome" class="id-campo">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Nome completo" class="largura-max">
                         
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required placeholder="Email para cadastro">
+                        <label for="email" class="id-campo">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Email para cadastro" class="largura-max">
                         
-                        <label for="cel">Celular</label>
-                        <input type="tel" name="cel" id="cel" required placeholder="(xx) xxxxx-xxxx">
+                        <label for="cel" class="id-campo">Celular</label>
+                        <input type="tel" name="cel" id="cel" required placeholder="(xx) xxxxx-xxxx" class="largura-max">
 
                         <div class="campo-datas">
-                            <div class="campo-form">
-                                <label for="ida">Data da ida</label>
-                                <input type="date" name="ida" id="ida" required>
+                            <div class="campo-form-datas">
+                                <label for="ida" class="id-campo">Data da ida</label>
+                                <input type="date" name="ida" id="ida" required class="largura-max">
                             </div>
 
-                            <div class="campo-form">
-                                <label for="volta">Data da volta</label>
-                                <input type="date" name="volta" id="volta" required>
+                            <div class="campo-form-datas">
+                                <label for="volta" class="id-campo">Data da volta</label>
+                                <input type="date" name="volta" id="volta" required class="largura-max">
                             </div>
                         </div>
 
                         <div class="campo-listas">
-                            <div class="campo-form">
-                                <label for="origem">Origem</label>
+                            <div class="campo-form-datas">
+                                <label for="origem" class="id-campo">Origem</label>
                                 <select name="origem" id="origem" required>
                                     <option value="">Partindo de</option>
                                     <option value="bahia">Bahia</option>
@@ -60,9 +61,9 @@
                                 </select>
                             </div>
 
-                            <div class="campo-form">
-                                <label for="destino">Destino</label>
-                                <select name="destino" id="destino" required>
+                            <div class="campo-form-datas">
+                                <label for="destino" class="id-campo">Destino</label>
+                                <select name="destino" id="destino" required >
                                     <option value="">Indo para</option>
                                     <option value="bahia">Bahia</option>
                                     <option value="goias">Goias</option>
@@ -75,7 +76,7 @@
                             </div>
                         </div>
                         
-                        <label for="quarto-cama">Quarto com cama infantil</label>
+                        <label for="quarto-cama" class="id-campo">Quarto com cama infantil</label>
                         <div class="radio-cama-infantil">
                             <div class="campo-radio">
                                 <input type="radio" name="quarto-cama" id="quarto-cama" value="sim">
@@ -88,7 +89,7 @@
                             </div>
                         </div>
 
-                        <label for="preferencias">Preferências da hospedagem</label>
+                        <label for="preferencias" class="id-campo">Preferências da hospedagem</label>
                         <div class="campo-preferencias-check">
                             <div class="campo-preferencias">
                                 <div class="opcoes-preferencias">
