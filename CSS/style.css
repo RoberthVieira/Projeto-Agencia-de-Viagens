@@ -9,11 +9,16 @@ body{
     font-family: 'Raleway';
 }
 
+.largura-definida{
+    max-width: 1024px;
+}
+
 
 /*SEÇÃO TOPO*/
 .secao-topo img{
     width: 32px;
     height: 32PX;
+    
 }
 
 .secao-topo{
@@ -122,3 +127,144 @@ form select{
 .campo-duplo div{
     width: calc(50% - 10px);
 }
+
+.radio-cama-infantil, .campo-preferencias{
+    display: flex;
+}
+
+.campo-radio, .opcoes-preferencias{
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.opcoes-preferencias input, .campo-radio input{
+    width: 15px;
+}
+
+.opcoes-preferencias label, .campo-radio label{
+    margin-left: 8px;
+}
+
+button{
+    width: 160px;
+    height: 32px;
+    border: none;
+    color: #fff;
+    background-color: #5d15d1;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*SEÇÃO 3 OFERTAS*/
+.secao-ofertas, .secao-ofertas-dois{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0;
+}
+
+.secao-ofertas h2, .secao-ofertas-dois h2{
+    font-size: 20px;
+    margin:0 0 10px 0;
+}
+
+h3{
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.secao-ofertas h3 span{
+    font-weight: bold;
+}
+
+.secao-oferta-img{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-maior{
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.img-menor{
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-menor figure{
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    margin: 0 6px;
+}
+
+.img-maior img, .img-menor img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 17px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 50%);
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/*SEÇÃO 4 AREA DE ANUNCIOS*/
+.img-secao-oferta-dois{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-secao-oferta-dois figure{
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.img-secao-oferta-dois figure img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.descricao-img{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.descricao-img h4{
+    font-size: 16px;
+}
+
+.descricao-img p{
+    margin-top: 15px;
+    color: grey;
+    font-size: 14px;
+}
+
+/*RODAPE*/
