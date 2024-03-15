@@ -268,3 +268,43 @@ figcaption{
 }
 
 /*RODAPE*/
+footer{
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+}
+
+footer .largura-definida{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-rede-sociais, .box-contato{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+}
+
+.box-rede-sociais h3, .box-contato h3{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+.contato img{
+    width: 18px;
+}
+
+.contato span{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
